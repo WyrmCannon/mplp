@@ -1,0 +1,105 @@
+body {
+    background-color: gray;
+    align-items: center;
+    background-image: url("/images/Gundam\ PNG.png");
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.contact-form {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    text-align: right;
+    border: #000000;
+    border: 0px;
+    padding: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #505050;
+    color: white;
+    font-size: 15px;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+
+#main2 {
+    display:flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+    color: white;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.buttonclass {
+
+    background-color: rgb(160, 160, 160);
+    border: 0px;
+    height: 20px;
+    width: 90px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.buttonclass:hover {
+    background-color:#bfbfbf;
+
+}
+.buttonclass:active {
+    font-size: 80%;
+}
+
+.buttonlink {
+
+    height: 25px;
+    width: 90px;
+}
+
+content {
+    margin-top: 125px;
+}
+
+.card {
+    padding: 15px 10px;
+    border: 5px solid #bfbfbf;
+    background-color: rgb(43, 42, 42);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+img {
+    width: 200px;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .header {
+        background-color: violet;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .header {
+        background-color: blueviolet;
+    }
+}
