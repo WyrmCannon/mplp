@@ -1,5 +1,13 @@
+:root {
+  --bg: gray;
+  --maindark: #555454;
+  --mainlight: #AFABAB;
+  --text: #fff;
+
+}
+
 body {
-    background-color: gray;
+    background-color: var(--bg);
     align-items: center;
     background-image: url("/images/Gundam\ PNG.png");
     background-size: 20%;
@@ -20,8 +28,8 @@ body {
     border: 0px;
     padding: 25px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #505050;
-    color: white;
+    background: var(--maindark);
+    color: var(--text);
     font-size: 15px;
     height: 75px;
     position: sticky;
@@ -34,7 +42,7 @@ body {
     display:flex;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
-    color: white;
+    color: var(--text);
     flex-flow: column;
     text-align: center;
     justify-content: center;
@@ -44,11 +52,11 @@ body {
 
 .buttonclass {
 
-    background-color: rgb(160, 160, 160);
+    background-color: var(--mainlight);
     border: 0px;
     height: 20px;
     width: 90px;
-    color: white;
+    color: var(--text);
     cursor: pointer;
     border: 2px solid black;
 }
@@ -65,6 +73,7 @@ body {
 
     height: 25px;
     width: 90px;
+    
 }
 
 content {
@@ -74,22 +83,35 @@ content {
 .card {
     padding: 15px 10px;
     border: 5px solid #bfbfbf;
-    background-color: rgb(43, 42, 42);
+    background-color: var(--mainlight);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    color: var(--text);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    
+}
 
+.card :hover {
+    background-color: darkred;
 }
 
 img {
     width: 200px;
 }
 
-
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: var(--maindark);
+  color: #fff;
+  position: sticky;
+  bottom: 0;
+  z-index: 999;
+}
 
 
 @media screen and (max-width: 900px) {
@@ -98,8 +120,88 @@ img {
     }
 }
 
-@media screen and (max-width: 700px) {
-    .header {
-        background-color: blueviolet;
+.contact1 {
+    background-color: var(--mainlight);
+    border: 0px;
+    height: 20px;
+    width: 90px;
+    color: white;
+    cursor: pointer;
+    border: 2px solid black;
+    
+  }
+  
+
+  .form-popup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .form-container input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: var(--text);
+  }
+  
+  textarea {
+    width:100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
     }
-}
+  
+   .form-container input[type=comments] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    
+  }
+  
+
+  .form-container input[type=text]:focus, {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+
+  .form-container .btn {
+    background-color: darkorchid;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  .form-container .cancel {
+    background-color: darkred;
+  }
+  
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+
+  }
+
+  .list2 {
+    
+    width:300px;
+    color: #f1f1f1;
+    border:5px solid rgb(43, 42, 42);
+  }

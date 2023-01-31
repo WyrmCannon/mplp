@@ -15,12 +15,12 @@
         <div id="header">
             <h1>Contact and Info</h1>
 
-            <a href="https://www.google.com" class="buttonlink" target="_blank"><button class="buttonclass"
+            <a href="https://github.com/WyrmCannon" class="buttonlink" target="_blank"><button class="buttonclass"
                     type="button"><strong>Github</strong></button></a>
             <a href="https://www.google.com" class="buttonlink" target="_blank"><button class="buttonclass"
                     type="button"><strong>Resume</strong></button></a>
-            <a href="https://www.google.com" class="buttonlink" target="_blank"><button class="buttonclass"
-                    type="button"><strong>Contact</strong></button>
+            <button class="Contact1"
+                    type="contact1" onclick="openForm()"><strong>Contact</strong></button>
             </a>
         </div>
     </div>
@@ -42,20 +42,51 @@
                 molestias eveniet velit perferendis recusandae molestiae necessitatibus, illo et, inventore facilis sint
                 incidunt alias quaerat delectus?</p></article>
         </section>
-        <!--What if I made this a seperate page, linked under one of the buttons in the header?
-
-
-<section id="contact-form">
-<form action="contact">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" value="Name"><br>
-        <label for="email address">Email address:</label><br>
-        <input type="text" id="lname" name="lname" value="example@mail.com"><br><br>
-        <textarea name="comment" cols="50" rows="10"></textarea>
-    </form><br>
-    <input type="submit" value="Submit"></section>
--->
+        
+        
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+        
+            <label for="Name"><b>Name</b></label>
+            <input type="text" placeholder="First/Last" name="Name" required>
+            
+            <label for="Email"><b>Email</b></label>
+            <input type="text" placeholder="yourname@email.com">
+        
+            <textarea id="freeform" name="freeform" rows="4" cols="35">
+        Enter text here...
+        </textarea>
+        
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            
+          </form>
+        </div>
+        <script>
+            function openForm() {
+              document.getElementById("myForm").style.display = "block";
+            }
+            
+            function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+            }
+            </script>
+            <ul class="list2">
+                <li>1</li><br>
+                <li>2</li><br>
+                <li>3</li><br>
+                <li>4</li><br>
+                <li>5</li><br>
+                <li>6</li><br>
+                <li>7</li><br>
+                <li>8</li><br>
+                <li>9</li><br>
+                <li>10</li><br>
+            </ul>
 </body>
 </content>
-
+<footer>
+    <span>Thanks for visiting!</span>
+  </footer>
 </html>
