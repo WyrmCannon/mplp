@@ -172,8 +172,7 @@ textarea {
 }
 
 
-.form-container input[type=text]:focus,
-{
+.form-container input[type=text]:focus {
 background-color: #ddd;
 outline: none;
 }
