@@ -3,90 +3,93 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C. Cannon Munn</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C. Cannon Munn</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header">
-        <div id="header">
-            <h1>Contact and Info</h1>
+  <div class="header">
+    <div id="header">
+      <h1>Contact and Info</h1>
 
-            <a href="https://github.com/WyrmCannon" class="buttonlink" target="_blank"><button class="buttonclass"
-                    type="button"><strong>Github</strong></button></a>
-            <a href="https://www.google.com" class="buttonlink" target="_blank"><button class="buttonclass"
-                    type="button"><strong>Resume</strong></button></a>
-            <button class="Contact1"
-                    type="contact1" onclick="openForm()"><strong>Contact</strong></button>
-            </a>
-        </div>
+      <a href="https://github.com/WyrmCannon" class="buttonlink" target="_blank"><button class="buttonclass"
+          type="button"><strong>Github</strong></button></a>
+      <a href="https://www.google.com" class="buttonlink" target="_blank"><button class="buttonclass"
+          type="button"><strong>Resume</strong></button></a>
+      <button class="Contact1" type="contact1" onclick="openForm()"><strong>Contact</strong></button>
+      </a>
     </div>
-    <content>
+  </div>
+  <content>
 
-        <div class="card">
-            <section id="card">
-                <img src="/images/windu.jpg.webp" alt="SLJ">
-            </section>
-            <h4><b>Mace Windu</b></h4>
-            <p>"How Can It Be A Plan If It's Improvised?"
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Magnam, animi consequuntur nobis
-                exercitationem inventore quos modi perspiciatis <br>quisquam tempora id ipsam nihil eaque asperiores vel
-                quasi illo placeat sed. Minus!</p>
-        </div>
-        <br>
-        <section id="main2"><article>
-            <p><h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4> Ipsam fuga aliquid nesciunt quibusdam eligendi
-                molestias eveniet velit perferendis recusandae molestiae necessitatibus, illo et, inventore facilis sint
-                incidunt alias quaerat delectus?</p></article>
-        </section>
-        
-        
-        <div class="form-popup" id="myForm">
-          <form action="/action_page.php" class="form-container">
-            <h1>Login</h1>
-        
-            <label for="Name"><b>Name</b></label>
-            <input type="text" placeholder="First/Last" name="Name" required>
-            
-            <label for="Email"><b>Email</b></label>
-            <input type="text" placeholder="yourname@email.com">
-        
-            <textarea id="freeform" name="freeform" rows="4" cols="35">
+    <div class="card">
+      <section id="card">
+        <img src="./images/windu.jpg.webp" alt="SLJ">
+      </section>
+      <h4><b>Mace Windu</b></h4>
+      <p>"How Can It Be A Plan If It's Improvised?"
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Magnam, animi consequuntur nobis
+        exercitationem inventore quos modi perspiciatis <br>quisquam tempora id ipsam nihil eaque asperiores vel
+        quasi illo placeat sed. Minus!</p>
+    </div>
+    <br>
+    <section id="main2">
+      <article>
+        <p>
+        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4> Ipsam fuga aliquid nesciunt quibusdam eligendi
+        molestias eveniet velit perferendis recusandae molestiae necessitatibus, illo et, inventore facilis sint
+        incidunt alias quaerat delectus?</p>
+      </article>
+    </section>
+
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Login</h1>
+
+        <label for="Name"><b>Name</b></label>
+        <input type="text" placeholder="First/Last" name="Name" required>
+
+        <label for="Email"><b>Email</b></label>
+        <input type="text" placeholder="yourname@email.com">
+
+        <textarea id="freeform" name="freeform" rows="4" cols="35">
         Enter text here...
         </textarea>
-        
-            <button type="submit" class="btn">Submit</button>
-            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-            
-          </form>
-        </div>
-        <script>
-            function openForm() {
-              document.getElementById("myForm").style.display = "block";
-            }
-            
-            function closeForm() {
-              document.getElementById("myForm").style.display = "none";
-            }
-            </script>
-            <ul class="list2">
-                <li>1</li><br>
-                <li>2</li><br>
-                <li>3</li><br>
-                <li>4</li><br>
-                <li>5</li><br>
-                <li>6</li><br>
-                <li>7</li><br>
-                <li>8</li><br>
-                <li>9</li><br>
-                <li>10</li><br>
-            </ul>
+
+        <button type="submit" class="btn">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+      </form>
+    </div>
+    <script>
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
+    </script>
+    <ul class="list2">
+      <li>1</li><br>
+      <li>2</li><br>
+      <li>3</li><br>
+      <li>4</li><br>
+      <li>5</li><br>
+      <li>6</li><br>
+      <li>7</li><br>
+      <li>8</li><br>
+      <li>9</li><br>
+      <li>10</li><br>
+    </ul>
 </body>
 </content>
 <footer>
-    <span>Thanks for visiting!</span>
-  </footer>
+  <span>Made with Zeonic Technology</span>
+</footer>
+
 </html>
